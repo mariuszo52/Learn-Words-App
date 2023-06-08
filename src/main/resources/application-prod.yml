@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://mysqldbprod/learnwords?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: admin
+  liquibase:
+    contexts: prod
+custom:
+  link: http://languagelearning.pl/register-confirm?token=

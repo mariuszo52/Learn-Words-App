@@ -1,0 +1,40 @@
+<html lang="pl"
+      xmlns:th="https://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <title>Nauka Słówek</title>
+</head>
+<body>
+        <main class="main-content" layout:fragment="content">
+            <h1 id="choice-h1">Wybierz czy chcesz powtórzyć swoją listę słówek czy dodać nowe słowka.</h1>
+            <div class="main-content-learn">
+           <div class="repeat-words">
+               <h2>Nauka i powtórka słówek</h2>
+               <p>Powtórka słówek jest kluczowym elementem skutecznej nauki języków obcych.
+                   Wykorzystanie krzywej zapominania pozwala na optymalne planowanie powtórek,
+                   aby utrwalać informacje w pamięci na dłuższy czas.</p>
+               <a class="button-link" th:href="@{/learn/repeat}">Przejdź do powtórki słówek</a>
+           </div>
+                <div class="repeat-words">
+                    <h2>Ucz się słówek podzielonych na kategorie</h2>
+                    <p>Prezentujemy Wam zestawy słówek z wybranego języka posegregowane tematycznie.
+                        Wybierz kategorię słówek, która Cię interesuje i rozpocznij swoją naukę.</p>
+                    <a class="button-link" th:href="@{/learn/category}">
+                        Przejdź do powtórek kategorii
+                    </a>
+
+                </div>
+            <div class="add-words">
+                <h2>Tutaj możesz dodać nowe słówka za pomocą formularza.</h2>
+
+                <p>Dodaj słówko, jego tłumaczenie w wybranym języku, kategorię,
+                    obrazek, który pomoże w zapamiętaniu oraz przykładowe zdanie w obcym języku.</p>
+                <a class="button-link" th:href="@{/learn/add}">Dodaj nowe słówka</a>
+
+            </div>
+            </div>
+        </main>
+</body>
+
+</html>

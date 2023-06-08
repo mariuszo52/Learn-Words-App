@@ -1,0 +1,44 @@
+<html lang="pl"
+      xmlns:th="https://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<link rel="stylesheet" href="../static/styles/main.css">
+<head>
+  <title>Nauka Słówek</title>
+</head>
+<body>
+<main class="main-content" layout:fragment="content">
+  <p class="notification-bar" th:if="${message}" th:text="${message}">Belka z powiadomieniami</p>
+  <h1 th:text="|Wybrany język: ${selectedLanguage}.|"></h1>
+  <h1 th:text="|Pozostało dzisiaj: ${wordsLeftToday}|"></h1>
+  <h2>Wybierz język:</h2>
+  <span><a class="language-name" th:each="language: ${userLanguages}" th:text="|${language} |" th:href="@{/learn/repeat(language=${language})}"></a></span>
+  <div class="main-content-repeat">
+    <div class="category">
+      <p th:each="category: ${categories}">
+        <a th:href="@{|/learn/repeat?category=${category.name}|}" class="category-item" th:text="${category.name}"></a>
+      </p>
+    </div>
+    <img th:if="${wordToTranslate} and ${isLinkValid}" class="word-image" th:src="@{${wordToTranslate.imageLink}}" th:alt="${wordToTranslate.polishName}">
+    <img th:if="${wordToTranslate} and not ${isLinkValid}" class="word-image" th:src="@{/img/photoNotFound.png}" th:alt="${wordToTranslate.polishName}">
+
+    <p th:if="${wordToTranslate}" th:text="${wordToTranslate.polishName}"></p>
+    <p id="empty" th:unless="${wordToTranslate}">Brak słówek do wyświetlenia.
+      Dodaj nowe słówka lub poczekaj na nowe powtórki.</p>
+    <p class="face" th:unless="${wordToTranslate}"><i class="fa-solid fa-face-smile-wink"></i></p>
+    <button th:if="${wordToTranslate}" class="learn-button">Sprawdź tłumaczenie</button>
+
+
+
+
+
+
+  </div>
+
+
+
+</main>
+
+</body>
+
+</html>

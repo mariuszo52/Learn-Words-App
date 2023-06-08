@@ -1,0 +1,22 @@
+<html lang="pl"
+      xmlns:th="https://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+  <title>Zarejestruj się</title>
+</head>
+<main class="main-content" layout:fragment="content">
+  <p class="notification-bar" th:if="${message}" th:text="${message}">Belka z powiadomieniami
+  <p class="notification-bar" th:each="error: ${validationErrors}" th:text="${error}">Błędy walidacji hasła</p>
+  <h1>Zarejestruj się</h1>
+  <form class="login-form" th:action="@{/register}" method="post" th:object="${userRegisterDto}">
+    <label for="username">Adres Email</label>
+    <input id="username" th:field="*{email}" placeholder="Adres email">
+    <label for="password">Hasło</label>
+    <input type="password" id="password" th:field="*{password}" placeholder="Hasło"><br>
+    <button type="submit">Zarejestruj się</button>
+  </form>
+  <a th:href="@{/send-email}">Wyślij ponownie link potwierdzający</a>
+
+</main>
+</html>

@@ -1,0 +1,27 @@
+<html lang="pl"
+      xmlns:th="https://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <title>Strona Główna</title>
+</head>
+<main class="main-content" layout:fragment="content">
+    <p class="notification-bar" th:if="${message}" th:text="${message}">Belka z powiadomieniami</p>
+    <div class="main-page">
+        <h1>
+            Witaj w aplikacji do Nauki Słówek!
+        </h1>
+    <p>
+        Rozwijaj swoje umiejętności językowe i poszerz swoje słownictwo z naszą aplikacją do nauki słówek z języka obcego. Oferujemy Ci wygodne i skuteczne narzędzia, które pomogą Ci zdobyć pewność w komunikacji w obcym języku.
+
+        Nasza aplikacja umożliwia dodawanie nowych słówek, tworzenie list słownictwa, naukę poprzez interaktywne quizy, śledzenie postępów oraz wiele więcej. Niezależnie od tego, czy dopiero rozpoczynasz swoją przygodę z językiem obcym, czy chcesz doskonalić swoje umiejętności, nasza aplikacja jest idealnym narzędziem dla Ciebie.
+
+        Załóż konto już teraz i zacznij odkrywać fascynujący świat nowych słów!
+
+        Gotowy na naukę? Zaloguj się lub zarejestruj, aby rozpocząć!
+
+    </p>
+    </div>
+
+  </main>
+</html>

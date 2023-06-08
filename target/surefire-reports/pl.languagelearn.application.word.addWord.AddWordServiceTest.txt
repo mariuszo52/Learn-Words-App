@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: pl.languagelearn.application.word.addWord.AddWordServiceTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.336 s - in pl.languagelearn.application.word.addWord.AddWordServiceTest

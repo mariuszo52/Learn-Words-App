@@ -1,0 +1,39 @@
+<html lang="pl"
+      xmlns:th="https://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+  <title>Panel użytkownika</title>
+</head>
+<main class="main-content" layout:fragment="content">
+  <p class="notification-bar" th:if="${message}" th:text="${message}">Belka z powiadomieniami</p>
+  <h2>Opcje użytkownika:</h2>
+  <h3>Zmień hasło:</h3>
+  <form th:action="@{/user-panel/change-password}" method="post">
+    <input type="hidden" name="_method" value="patch">
+    <label for="oldPass">Stare hasło:</label>
+    <input id="oldPass" type="password" name="oldPass">
+    <input type="hidden" name="_method" value="patch">
+    <label for="newPass">Nowe hasło:</label>
+    <input id="newPass" type="password" name="newPass"><br>
+    <input type="submit" value="Zmień hasło">
+  </form>
+  <h3>Resetuj statystyki:</h3>
+  <form th:action="@{/user-panel/reset-stats}" method="post">
+    <input type="hidden" name="_method" value="patch">
+    <input type="submit" value="Resetuj statystyki">
+  </form>
+  <h3>Usuń wszystkie słówka</h3>
+  <form th:action="@{/user-panel/reset-words}" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Wyczyść słownik">
+  </form>
+  <h3>Usuń konto:</h3>
+  <form th:action="@{/user-panel/delete}" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Usuń konto">
+  </form>
+
+
+</main>
+</html>

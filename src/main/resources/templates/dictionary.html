@@ -1,0 +1,64 @@
+<html lang="pl"
+      xmlns:th="https://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+  <title th:text="|Słownik: ${language}|">Słownik</title>
+</head>
+<main class="main-content" layout:fragment="content">
+  <p class="notification-bar" th:if="${message}" th:text="${message}">Belka z powiadomieniami</p>
+   <div class="form-div">
+       <p th:text="|Słownik: ${language}|"></p>
+     <form class="languageForm" method="get" th:action="@{/dictionary}">
+     <label>
+       <p>Wybierz język słownika</p>
+       <select id="select-language" name="language">
+         <option th:each="language: ${languages}" th:value="${language}" th:text="${language}"></option>
+       </select>
+     </label>
+       <input type="submit" value="Zmień język">
+     </form>
+     <form class="searchForm" method="get" th:action="@{/dictionary}">
+       <label for="wordName">Wyszukaj słówko</label>
+       <input name="wordName" id="wordName" placeholder="Wpisz słówko, które chcesz wyszukać.">
+       <button id="searchCategoryButton" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+     </form>
+   </div>
+    <div class="table-div">
+   <table class="default-table">
+     <thead>
+     <tr>
+       <th>#</th>
+       <th><a th:href="@{/dictionary(size=${size}, page=${page}, sort='polishName', language=${language})}">Słówko</a></th>
+       <th><a th:href="@{/dictionary(size=${size}, page=${page}, sort='translation', language=${language})}">Tłumaczenie</a></th>
+       <th><a th:href="@{/dictionary(size=${size}, page=${page}, sort='sentence', language=${language})}">Zdanie</a></th>
+       <th><a th:href="@{/dictionary(size=${size}, page=${page}, sort='categoryName', language=${language})}">Kategoria</a></th>
+       <th>Akcja</th>
+     </tr>
+     </thead>
+     <tbody>
+     <tr th:each="word, state: ${dictionary}">
+       <td th:text="${state.count}"></td>
+       <td th:text="${word.polishName}"></td>
+       <td th:text="${word.translation}"></td>
+       <td th:text="${word.sentence}"></td>
+       <td th:text="${word.categoryName}"></td>
+       <td><a class="button-link" th:href="@{|word-edit/${word.id}|}">Edytuj</a>
+           <form th:action="@{|word-delete/${word.id}|}" method="post">
+               <input type="hidden" name="_method" value="delete">
+               <input type="hidden" name="wordId" th:value="${word.id}">
+               <button class="button-link" type="submit">Usuń</button>
+           </form>
+       </td>
+     </tr>
+     </tbody>
+   </table>
+    </div>
+   <span>Numer strony:</span>
+   <div th:if="${dictionary.totalPages > 0}" class="pagination" th:each="pageNumber : ${pageNumbers}">
+     <a class="pagination"
+        th:href="@{/dictionary(size=${dictionary.size}, page=${pageNumber}, sort=${sort}, language=${language})}"
+        th:text="${pageNumber}"></a>
+   </div>
+ </main>
+ </html>

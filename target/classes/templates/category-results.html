@@ -1,0 +1,43 @@
+<html lang="pl"
+      xmlns:th="https://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Wyniki powtórki słówek</title>
+</head>
+<body>
+  <main class="main-content" layout:fragment="content">
+    <div class="category-options">
+    <a th:href="@{/learn/category}" class="category-item" th:text="|Wróć do listy kategorii|"></a>
+      <a th:href="@{|/learn/category/${category.id}?number=${numberOfWords}&language=${language}&repeat=${repeat}|}" class="category-item"
+         th:text="|Powtórz ponownie tę samą kategorię (Liczba słów: ${numberOfWords})|"></a>
+      <table id="result-table-id" class="default-table">
+      <thead>
+      <tr>
+        <th>Numer</th>
+        <th>Słowko</th>
+        <th>Twoja odpowiedz</th>
+        <th>Prawidłowa odpowiedz</th>
+      </tr>
+      </thead>
+    <tbody>
+  <tr th:each="result, state: ${results}">
+    <td th:class="|result-td-${state.count}|" th:text="${state.count}"></td>
+    <td th:class="|result-td-${state.count}|" th:text="${result.polishName}"></td>
+    <td th:class="|result-td-${state.count}|" th:text="${result.userTranslation}"></td>
+    <td th:class="|result-td-${state.count}|" th:text="${result.translation}"></td>
+  </tr>
+  </tbody>
+    </table>
+    </div>
+    <div class="results">
+    <h2>Wyniki</h2>
+    <p th:text="|Liczba prawidłowych odpowiedzi: ${goodAnswers.size()}|"></p>
+      <p th:text="|Liczba błędnych odpowiedzi: ${results.size() - goodAnswers.size()}|"></p>
+      <p th:text="|Wynik: ${#numbers.formatDecimal(goodAnswers.size() * 100/results.size(), 1, 2)} %|"></p>
+    </div>
+  </main>
+
+</body>
+</html>

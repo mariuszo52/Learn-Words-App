@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b60e23c9-b824-4315-9210-1a9210fe1a42" name="Changes" comment="new tests 31.05.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/answer/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/answer/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/answer/AnswerComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/answer/AnswerComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/category/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/category/CategoryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/category/CategoryDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/category/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/category/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/category/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/category/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/email/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/email/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/language/LanguageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/language/LanguageMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/language/LanguageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/language/LanguageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/security/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/security/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/security/LoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/security/LoginSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/security/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/security/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/user/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/user/CustomUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/user/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/user/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/user/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/user/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/user/UserStatsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/user/UserStatsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/user/UserStatsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/user/UserStatsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/userRole/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/userRole/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/userRole/UserRoleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/userRole/UserRoleDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/userRole/UserRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/userRole/UserRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/userRole/UserRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/userRole/UserRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/validation/BcryptPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/validation/BcryptPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/web/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/web/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/word/WordEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/word/WordEditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/word/addWord/AddWordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/word/addWord/AddWordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/word/addWord/AddWordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/word/addWord/AddWordService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/word/dto/WordDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/word/dto/WordDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/word/learnWords/LearnWordsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/word/learnWords/LearnWordsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/word/learnWords/LearnWordsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/word/learnWords/LearnWordsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/word/learnWords/LearnWordsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/languagelearn/application/word/learnWords/LearnWordsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/category/CategoryServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/category/CategoryServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/language/LanguageServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/language/LanguageServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/user/CustomUserDetailsServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/user/CustomUserDetailsServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/user/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/user/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/user/UserStatsServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/user/UserStatsServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/userRole/UserRoleServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/userRole/UserRoleServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/word/WordServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/word/WordServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/word/addWord/AddWordServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/word/addWord/AddWordServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/word/learnWords/LearnWordsServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/languagelearn/application/word/learnWords/LearnWordsServiceTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="HTML File" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master2" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/resources/static/styles/main.css" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2Lb1XNmXJtyNlQlJfvimaKVW1Sc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;jj&quot;,
+    &quot;js.last.introduce.type&quot;: &quot;CONST&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mariusz/Downloads/spring2021-cw-main/spring2021-cw-main/application/src/main/resources&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4807892&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3676d55f84497cbeadfc614c1b1b62fc&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.languagelearn.application.validation" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mariusz\Downloads\spring2021-cw-main\spring2021-cw-main\application\src\main\resources" />
+      <recent name="C:\Users\Mariusz\Downloads\spring2021-cw-main\spring2021-cw-main\application\src\main\resources\db\changelog" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mariusz\Downloads\spring2021-cw-main\spring2021-cw-main\application\src\main\resources\db\changelog" />
+      <recent name="C:\Users\Mariusz\Downloads\spring2021-cw-main\spring2021-cw-main\application\src\main\resources\static\img" />
+      <recent name="C:\Users\Mariusz\Downloads\spring2021-cw-main\spring2021-cw-main\application\src\main\resources\static" />
+      <recent name="C:\Users\Mariusz\Downloads\spring2021-cw-main\spring2021-cw-main\application\src\main\resources\static\" />
+      <recent name="C:\Users\Mariusz\Downloads\spring2021-cw-main\spring2021-cw-main\application\src\main\resources\static\styles" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.languagelearn.application.word.learnWords" />
+      <recent name="pl.languagelearn.application.word" />
+      <recent name="pl.languagelearn.application.word.addWord" />
+      <recent name="pl.languagelearn.application.userRole" />
+      <recent name="pl.languagelearn.application.user" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean compile package" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="LearnWordsServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.languagelearn.application.word.learnWords.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.languagelearn.application.word.learnWords" />
+      <option name="MAIN_CLASS_NAME" value="pl.languagelearn.application.word.learnWords.LearnWordsServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LearnWordsServiceTest.shouldReturnSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.languagelearn.application.word.learnWords.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.languagelearn.application.word.learnWords" />
+      <option name="MAIN_CLASS_NAME" value="pl.languagelearn.application.word.learnWords.LearnWordsServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnSet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LearnWordsServiceTest.shouldReturnSetWith1Element" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.languagelearn.application.word.learnWords.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.languagelearn.application.word.learnWords" />
+      <option name="MAIN_CLASS_NAME" value="pl.languagelearn.application.word.learnWords.LearnWordsServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnSetWith1Element" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="application in application" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="application" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/pl/languagelearn/application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in application" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="application" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.languagelearn.application.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.java in application" />
+      <item itemvalue="JUnit.application in application" />
+      <item itemvalue="JUnit.LearnWordsServiceTest" />
+      <item itemvalue="JUnit.LearnWordsServiceTest.shouldReturnSet" />
+      <item itemvalue="JUnit.LearnWordsServiceTest.shouldReturnSetWith1Element" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.application in application" />
+        <item itemvalue="JUnit.java in application" />
+        <item itemvalue="JUnit.LearnWordsServiceTest" />
+        <item itemvalue="JUnit.LearnWordsServiceTest.shouldReturnSetWith1Element" />
+        <item itemvalue="JUnit.LearnWordsServiceTest.shouldReturnSet" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b60e23c9-b824-4315-9210-1a9210fe1a42" name="Changes" comment="" />
+      <created>1676125010468</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676125010468</updated>
+      <workItem from="1676125011751" duration="23517000" />
+      <workItem from="1676793470901" duration="31486000" />
+      <workItem from="1677086209277" duration="74151000" />
+      <workItem from="1677610869080" duration="90145000" />
+      <workItem from="1678025890405" duration="13073000" />
+      <workItem from="1678125789392" duration="103151000" />
+      <workItem from="1679213530786" duration="111421000" />
+      <workItem from="1680181796842" duration="391000" />
+      <workItem from="1680182469797" duration="112000" />
+      <workItem from="1680182618783" duration="192969000" />
+      <workItem from="1681131446369" duration="239000" />
+      <workItem from="1681131745162" duration="38206000" />
+      <workItem from="1681402369112" duration="154317000" />
+      <workItem from="1682535256619" duration="63211000" />
+      <workItem from="1682800575326" duration="40839000" />
+      <workItem from="1683648461837" duration="12472000" />
+      <workItem from="1683812194796" duration="113186000" />
+      <workItem from="1685782222107" duration="48558000" />
+      <workItem from="1685980101850" duration="25530000" />
+      <workItem from="1686218289804" duration="6931000" />
+      <workItem from="1686229572247" duration="481000" />
+      <workItem from="1686230292586" duration="8231000" />
+      <workItem from="1686243738848" duration="1823000" />
+      <workItem from="1686249355847" duration="2325000" />
+    </task>
+    <task id="LOCAL-00001" summary="add style.css">
+      <created>1676125635074</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676125635075</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add new functions">
+      <created>1678550061528</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678550061528</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add function of selecting how many words will be repeated">
+      <created>1678907173839</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678907173839</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add function reseting results list">
+      <created>1679591941657</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679591941657</updated>
+    </task>
+    <task id="LOCAL-00005" summary="correct previous and next category buttons">
+      <created>1679676162237</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679676162237</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update adding new words from file or from text">
+      <created>1680181517509</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680181517509</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add function finding category">
+      <created>1680264687905</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680264687905</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add register and login functions">
+      <created>1680627833003</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680627833003</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add user statistics">
+      <created>1681039284183</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681039284183</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add table language">
+      <created>1681317756057</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681317756057</updated>
+    </task>
+    <task id="LOCAL-00011" summary="n">
+      <created>1681628707740</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1681628707740</updated>
+    </task>
+    <task id="LOCAL-00012" summary="n">
+      <created>1682537094821</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682537094821</updated>
+    </task>
+    <task id="LOCAL-00013" summary="tests">
+      <created>1684418319837</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684418319838</updated>
+    </task>
+    <task id="LOCAL-00014" summary="new tests 30.05.">
+      <created>1685448743757</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1685448743757</updated>
+    </task>
+    <task id="LOCAL-00015" summary="new tests 31.05.">
+      <created>1685529679810</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1685529679811</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add style.css" />
+    <MESSAGE value="add new functions" />
+    <MESSAGE value="add function of selecting how many words will be repeated" />
+    <MESSAGE value="add function reseting results list" />
+    <MESSAGE value="correct previous and next category buttons" />
+    <MESSAGE value="update adding new words from file or from text" />
+    <MESSAGE value="add function finding category" />
+    <MESSAGE value="add register and login functions" />
+    <MESSAGE value="add user statistics" />
+    <MESSAGE value="add table language" />
+    <MESSAGE value="n" />
+    <MESSAGE value="tests" />
+    <MESSAGE value="new tests 30.05." />
+    <MESSAGE value="new tests 31.05." />
+    <option name="LAST_COMMIT_MESSAGE" value="new tests 31.05." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/pl/languagelearn/application/category/CategoryServiceTest.java</url>
+          <line>62</line>
+          <properties class="pl.languagelearn.application.category.CategoryServiceTest" method="shouldFindCategoryWithId2">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

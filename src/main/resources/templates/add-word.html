@@ -1,0 +1,68 @@
+<html lang="pl"
+      xmlns:th="https://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <title>Dodaj nowe słowko</title>
+</head>
+<main class="main-content" layout:fragment="content">
+    <p class="notification-bar" th:if="${message}" th:text="${message}">Belka z powiadomieniami</p>
+    <h1>Dodaj nowe słówka</h1>
+    <fieldset>
+        <legend>Podaj szczegóły słówka</legend>
+<form class="addWordForm" method="post" th:action="@{/learn/add}" th:object="${wordDto}">
+    <label for="polishName">Słówko</label>
+    <input id="polishName" placeholder="Dom" th:field="*{polishName}">
+    <p th:text="${polishNameError}" class="error"></p>
+    <label for="translation">Tłumaczenie</label>
+    <input id="translation" placeholder="House" th:field="*{translation}">
+    <p th:text="${translationError}" class="error"></p>
+    <label for="imageLink">Link do zdjęcia poglądowego</label>
+    <input id="imageLink" placeholder="http://www.imageofhouse.jpg" th:field="*{imageLink}">
+    <p th:text="${imageLinkError}" class="error"></p>
+    <label for="sentence">Zdanie z podanym słówkiem</label>
+    <input id="sentence" placeholder="Today i am buying a new house." th:field="*{sentence}">
+    <p th:text="${sentenceError}" class="error"></p>
+    <label for="category">Podaj kategorię słówka</label>
+    <input id="category" type="text" list="categories" th:field="*{categoryName}" />
+    <datalist th:each="category: ${categories}" id="categories">
+        <option th:text="${category.name}">Państwa</option>
+    </datalist>
+    <p th:text="${categoryNameError}" class="error"></p>
+    <label for="language">Wybierz język</label>
+        <select id="language" th:field="*{languageName}" name="language">
+                <option th:each="language: ${languages}" th:text="${language.name}" th:value="${language.name}"/>
+            </select>
+    <p th:text="${languageNameError}" class="error"></p>
+    <input type="submit" value="Dodaj Słówko">
+</form>
+    </fieldset>
+    <fieldset>
+        <legend>Dodaj całą listę słówek</legend>
+        <form class="addWordForm" method="post" th:action="@{/learn/add/text}">
+            <p>Wpisz słówka w postaci przedstawionej poniżej</p>
+            <textarea placeholder="chleb;bread;https://example.com/bread.jpg;I buy bread.;jedzenie" name="wordsText" id="wordsListArea"></textarea>
+            <label>
+                Wybierz język
+                <select name="language">
+                    <option th:each="language: ${languages}" th:text="${language.name}" th:value="${language.name}"/>
+                </select>
+            </label>
+            <input type="submit" value="Dodaj tekst">
+        </form>
+        <p>Dodaj plik tekstowy</p>
+        <form class="addWordForm" method="post" th:action="@{/learn/add/file}" enctype="multipart/form-data">
+            <input type="file" id="wordsListFile" name="wordsListFile">
+            <label>
+                Wybierz język
+                <select name="language">
+                    <option th:each="language: ${languages}" th:text="${language.name}" th:value="${language.name}"/>
+                </select>
+            </label>
+            <input type="submit" value="Dodaj plik">
+        </form>
+    </fieldset>
+
+
+</main>
+</html>

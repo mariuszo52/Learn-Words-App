@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: pl.languagelearn.application.word.WordServiceTest
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.09 s - in pl.languagelearn.application.word.WordServiceTest

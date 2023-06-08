@@ -1,0 +1,55 @@
+<html lang="pl"
+      xmlns:th="https://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+  <title>Panel Administratora</title>
+</head>
+<main class="main-content" layout:fragment="content">
+  <p class="notification-bar" th:if="${message}" th:text="${message}">Belka z powiadomieniami</p>
+  <h1 th:text="|Panel administratora:|"></h1>
+  <h2 th:text="|${#authentication.getName()}|"></h2>
+    <h2 th:text="|Liczba zarejestrowanych użytkowników: ${users.size()}|"></h2>
+  <p></p>
+    <h2>Zarządzanie użytkownikami</h2>
+  <p></p>
+  <div class="table-div">
+    <table class="default-table">
+    <thead>
+    <tr>
+      <th>id uzytkownika</th>
+      <th>Nazwa użytkownika</th>
+      <th>Rola użytkownika</th>
+      <th>Wykonaj akcję</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user: ${users}">
+      <td th:text="${user.id}">użytkownik id</td>
+      <td th:text="${user.email}">uzytkownik  email</td>
+      <td th:text="${user.getRole()}">uzytkownik  rola</td>
+      <td>
+        <a class="button-link" th:href="@{|/admin-panel/user-edit/${user.id}|}">Edytuj</a>
+
+        <form class="delete-form" th:action="|@{/admin-panel}|" method="post">
+          <input type="hidden" name="_method" value="delete">
+          <input type="hidden" name="userId" th:value="${user.id}">
+          <button class="button-link" type="submit">Usuń</button></form>
+        <form th:if="${user.accountNotLocked}" class="delete-form" th:action="|@{/admin-panel/block}|" method="post">
+          <input type="hidden" name="_method" value="patch">
+          <input type="hidden" name="userId" th:value="${user.id}">
+          <button class="button-link" type="submit">Zablokuj</button></form>
+        <form th:unless="${user.accountNotLocked}" class="delete-form" th:action="|@{/admin-panel/unblock}|" method="post">
+          <input type="hidden" name="_method" value="patch">
+          <input type="hidden" name="userId" th:value="${user.id}">
+          <button class="button-link" type="submit">Odblokuj</button></form>
+    </tr>
+    </tbody>
+  </table>
+    </div>
+
+
+
+
+</main>
+</html>
