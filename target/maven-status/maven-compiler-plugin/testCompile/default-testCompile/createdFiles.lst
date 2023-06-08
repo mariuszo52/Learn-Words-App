@@ -1,9 +1,0 @@
-pl\languagelearn\application\word\learnWords\LearnWordsServiceTest.class
-pl\languagelearn\application\user\CustomUserDetailsServiceTest.class
-pl\languagelearn\application\language\LanguageServiceTest.class
-pl\languagelearn\application\word\addWord\AddWordServiceTest.class
-pl\languagelearn\application\category\CategoryServiceTest.class
-pl\languagelearn\application\user\UserServiceTest.class
-pl\languagelearn\application\userRole\UserRoleServiceTest.class
-pl\languagelearn\application\user\UserStatsServiceTest.class
-pl\languagelearn\application\word\WordServiceTest.class
