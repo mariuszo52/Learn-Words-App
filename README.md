@@ -1,4 +1,5 @@
 Introduction:
+
 Welcome to the application for intelligent vocabulary review in a language of your choice! This application has been created with the aim of effective vocabulary learning through the utilization of a special algorithm based on the forgetting curve. Thanks to this algorithm, you will receive a set of words tailored to your individual needs every day.
 
 The application enables you to add your own words along with their translations, complete sentences containing the word, and helpful images. You can use this feature to personalize your learning and focus on precisely the words that are most important to you.
@@ -18,7 +19,9 @@ List of used libraries or frameworks:
 * Hibernate
 * JUnit
 * Mockito
+
 How to start?
+
 * Download the repository.
 * Install Maven as shown in the instructions at: https://maven.apache.org/install.html.
 * Install Java 19 JDK as shown in the instructions at: https://thejavaguy.org/posts/015-how-to-install-jdk-19-on-windows/.
