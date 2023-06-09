@@ -18,3 +18,14 @@ List of used libraries or frameworks:
 * Hibernate
 * JUnit
 * Mockito
+How to start?
+* Download the repository.
+* Install Maven as shown in the instructions at: https://maven.apache.org/install.html.
+* Install Java 19 JDK as shown in the instructions at: https://thejavaguy.org/posts/015-how-to-install-jdk-19-on-windows/.
+* Open Windows PowerShell or another command line interface.
+* Navigate to the root directory of the application.
+* Execute the command "mvn spring-boot:run".
+* Register, log in, and start using the application.
+
+Contact
+If You have any questions, send me a message at mariuszo19@onet.pl
