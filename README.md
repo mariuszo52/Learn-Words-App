@@ -29,6 +29,9 @@ How to start?
 * Navigate to the root directory of the application.
 * Execute the command "mvn spring-boot:run".
 * Register, log in, and start using the application.
+* Default login credentials:
+login: admin@example.com password: Examplepassword1!
+login: user@example.com password: Examplepassword1!
 
 Contact
 If You have any questions, send me a message at mariuszo19@onet.pl
