@@ -1,18 +1,19 @@
 insert into category (name) values ('Zwierzęta');
+insert into category (name) values ('Dom');
 INSERT INTO word (polish_name, translation, image_link, sentence, priority, category_id)
-VALUES ('Kot', 'Cat', 'https://tiny.pl/cxpp5', 'My cat likes to play with a ball.', 4, 4);
+VALUES ('Kot', 'Cat', 'https://tiny.pl/cxpp5', 'My cat likes to play with a ball.', 1, 1);
 
 INSERT INTO word (polish_name, translation, image_link, sentence, priority, category_id)
-VALUES ('Pies', 'Dog', 'https://tiny.pl/cxppk', 'I take my dog for a walk every morning.', 3, 4);
+VALUES ('Pies', 'Dog', 'https://tiny.pl/cxppk', 'I take my dog for a walk every morning.', 1, 1);
 
 INSERT INTO word (polish_name, translation, image_link, sentence, priority, category_id)
-VALUES ('Samochód', 'Car', 'https://tiny.pl/cxplq', 'I need to buy a new car.', 2, 5);
+VALUES ('Samochód', 'Car', 'https://tiny.pl/cxplq', 'I need to buy a new car.', 1, 2);
 
 INSERT INTO word (polish_name, translation, image_link, sentence, priority, category_id)
-VALUES ('Książka', 'Book', 'https://tiny.pl/cxplg', 'I enjoy reading a good book in my free time.', 3, 6);
+VALUES ('Książka', 'Book', 'https://tiny.pl/cxplg', 'I enjoy reading a good book in my free time.', 1, 2);
 
 INSERT INTO word (polish_name, translation, image_link, sentence, priority, category_id)
-VALUES ('Telefon', 'Phone', 'https://tiny.pl/cxplw', 'I forgot my phone at home.', 2, 5);
+VALUES ('Telefon', 'Phone', 'https://tiny.pl/cxplw', 'I forgot my phone at home.', 1, 2);
 
 
 INSERT INTO user_role (name, description) VALUES ('ADMIN', 'Może robić wszystko');
@@ -20,12 +21,12 @@ INSERT INTO user_role (name, description) VALUES ('USER', 'Może podstawowe rzec
 INSERT INTO users (email, password, user_role_id, repeated_words, repeated_words_today, days_in_a_row,
                    last_login, learned_words, words_to_learn, register_date, all_time, time_today, new_words,
                    new_words_week, is_account_not_locked)
-VALUES ('admin@example.com', '{bcrypt}$2a$12$URl.cgmbWsZS.ybIh0bb0eapxFNIwB2JLFeyQZ.nuFENrsvCGwVCq',
+VALUES ('admin@example.com', '{bcrypt}$2y$10$vNM.ApypTgWsDJAPfIQEWeb61UNbImxv9tQJH.MMP4Hbmhu6HumDC',
         1 , 0, 0, 0, '1970-01-01 00:00:00', 0, 0, '1970-01-01 00:00:00', 0, 0, 0, 0, true);
 INSERT INTO users (email, password, user_role_id, repeated_words, repeated_words_today, days_in_a_row,
                    last_login, learned_words, words_to_learn, register_date, all_time, time_today, new_words,
                    new_words_week, is_account_not_locked)
-VALUES ('user@example.com', '{bcrypt}$2a$12$URl.cgmbWsZS.ybIh0bb0eapxFNIwB2JLFeyQZ.nuFENrsvCGwVCq',
+VALUES ('user@example.com', '{bcrypt}$2y$10$vNM.ApypTgWsDJAPfIQEWeb61UNbImxv9tQJH.MMP4Hbmhu6HumDC',
         2 , 0, 0, 0, '1970-01-01 00:00:00', 0, 0, '1970-01-01 00:00:00', 0, 0, 0, 0, true);
 UPDATE category SET user_id = 1 WHERE user_id IS NULL;
 insert into language (name) values ('angielski');
